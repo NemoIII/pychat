@@ -279,8 +279,9 @@ input[type=text], select {
         </div>
       </nav>
       <div class="container">
-
+        <!-- Aqui foram feitas mudanças para interagir diretamente com o Django. -->
         <form id="post-form" method="POST" action="checkview">
+          <!-- Por uma explicação aqui sobre o CSRF TOKEN -->
           {% csrf_token %}
             <label id="room_name_top">Room Name</label>
             <textarea id="input1" class="form-control" aria-label="With textarea" type="text" name="room_name" id="room_name" style="margin-top: 10px;"></textarea>
