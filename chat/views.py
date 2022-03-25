@@ -8,9 +8,15 @@ from django.http import HttpResponse, JsonResponse
   - def: home
     :param: request
   - def: room
+    :param: request
     :param: room
   - def: checkview
-    :param: 
+    :param: request
+  - def: send
+    :param: request
+  - def: getMessages
+    :param: request
+    :param: room
 """
 def home(request):
   return render(request, 'home.html')
